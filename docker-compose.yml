@@ -2,9 +2,11 @@ version: '3.4'
 
 services:
   demo:
-    image: demo
+    image: gradle:7.6-jdk11
     build:
       context: .
       dockerfile: ./Dockerfile
     ports:
       - 3000:3000
+    #command: ["gradle", "build"]
+    #working_dir: /home/desktop_app
