@@ -1,4 +1,4 @@
-FROM openjdk:8-jdk-alpine
+FROM gradle:7.6-jdk11
 VOLUME /tmp
 ARG JAVA_OPTS
 ENV JAVA_OPTS=$JAVA_OPTS
