@@ -7,6 +7,10 @@ services:
       context: .
       dockerfile: ./Dockerfile
     ports:
-      - 3000:3000
+      - 8080:8080
+    stdin_open: true
+    tty: true
+    
+    
     #command: ["gradle", "build"]
     #working_dir: /home/desktop_app

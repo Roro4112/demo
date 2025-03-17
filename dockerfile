@@ -1,9 +1,9 @@
 FROM gradle:7.6-jdk11 AS build
 WORKDIR /home/gradle/project
 COPY . .
-EXPOSE 3000
+EXPOSE 8080
 
-RUN ./gradlew apprun
+CMD ["gradle", "apprun"]
 
 # VOLUME /tmp
 # ARG JAVA_OPTS
